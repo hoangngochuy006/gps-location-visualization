@@ -38,7 +38,8 @@ longitude, latitude
 
 ## Deployment
 
-This application will be deployed using Azure Static Web Apps.
+This application is deployed using Azure Static Web Apps.
 
-The Azure Maps subscription key will be stored as a cloud environment
-variable rather than being stored directly in the source code.
+The Azure Maps subscription key is stored as a GitHub Actions
+repository secret (`AZURE_MAPS_KEY`) and injected during deployment.
+It is not stored directly in the source code.
